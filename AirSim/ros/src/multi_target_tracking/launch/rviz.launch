@@ -1,0 +1,10 @@
+<launch>
+	<!-- <node type="rviz" name="rviz" pkg="rviz" args="-d $(find multi_target_tracking)/rviz/2p2e_rgbdss.rviz" /> -->
+
+	<!-- pursuer trajectories in orange, evader trajectories in green, axes for pursuers 10P 15E case -->
+	<node type="rviz" name="rviz" pkg="rviz" args="-d $(find multi_target_tracking)/rviz/10p15e_trajpath.rviz" />
+
+	<!-- pursuer trajectories in orange, evader trajectories in green, axes for pursuers 8P 12E case -->
+	<!-- <node type="rviz" name="rviz" pkg="rviz" args="-d $(find multi_target_tracking)/rviz/8p12e_trajpath.rviz" /> -->
+
+</launch>

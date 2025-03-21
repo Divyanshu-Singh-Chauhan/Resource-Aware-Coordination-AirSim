@@ -1,0 +1,31 @@
+<launch>
+
+  <!-- roslaunch airsim_ros_pkgs airsim_node_odom_10p15e_1node.launch update_control_every_n_sec:=1/freq -->
+
+  <!-- <include file="$(find airsim_ros_pkgs)/launch/airsim_node_odom_5p10e.launch" /> -->
+  <!-- <include file="$(find airsim_ros_pkgs)/launch/airsim_node_odom_10p15e.launch" /> -->
+  <include file="$(find airsim_ros_pkgs)/launch/airsim_node_odom_10p15e_1node.launch" />
+  <!-- <include file="$(find airsim_ros_pkgs)/launch/airsim_node_odom_8p12e.launch" /> -->
+
+
+  <!-- roslaunch multi_target_tracking pursuer_evader_data_publisher.launch pub_freq:=freq-->
+  <!-- takes in pub_freq parameter, set to be same as the replanning rate -->
+  <include file="$(find multi_target_tracking)/launch/pursuer_evader_data_publisher.launch" />
+
+  <!-- <node name="clock_talker" pkg="multi_target_tracking" type="clock_publisher.py" output="screen"/> -->
+
+
+  <!-- rosrun multi_target_tracking clock_publisher.py _replanning_freq:=freq -->
+  <!-- will remove this and call separately from bash script for experiments -->
+  <node name="clock_talker" pkg="multi_target_tracking" type="clock_publisher.py" output="screen">
+    <param name="replanning_freq" type="double" value="10.0"/> <!-- Adjust the value as needed -->
+  </node>
+
+  <!-- roslaunch multi_target_tracking odom_to_path_nodes_10p15e.launch-->
+  <!-- <include file="$(find multi_target_tracking)/launch/odom_to_path_nodes_8p12e.launch" /> -->
+  <include file="$(find multi_target_tracking)/launch/odom_to_path_nodes_10p15e.launch" />
+
+  <!-- roslaunch multi_target_tracking rviz.launch-->
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find multi_target_tracking)/rviz/10p15e_trajpath.rviz" />
+
+</launch>
