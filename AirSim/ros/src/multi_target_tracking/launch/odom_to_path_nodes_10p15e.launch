@@ -1,0 +1,103 @@
+<launch>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node1">
+    <param name="drone_name" value="Drone1"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node2">
+    <param name="drone_name" value="Drone2"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node3">
+    <param name="drone_name" value="Drone3"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node4">
+    <param name="drone_name" value="Drone4"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node5">
+    <param name="drone_name" value="Drone5"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node6">
+    <param name="drone_name" value="Drone6"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node7">
+    <param name="drone_name" value="Drone7"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node8">
+    <param name="drone_name" value="Drone8"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node9">
+    <param name="drone_name" value="Drone9"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node10">
+    <param name="drone_name" value="Drone10"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node11">
+    <param name="drone_name" value="Drone11"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node12">
+    <param name="drone_name" value="Drone12"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node13">
+    <param name="drone_name" value="Drone13"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node14">
+    <param name="drone_name" value="Drone14"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node15">
+    <param name="drone_name" value="Drone15"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node16">
+    <param name="drone_name" value="Drone16"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node17">
+    <param name="drone_name" value="Drone17"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node18">
+    <param name="drone_name" value="Drone18"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node19">
+    <param name="drone_name" value="Drone19"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node20">
+    <param name="drone_name" value="Drone20"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node21">
+    <param name="drone_name" value="Drone21"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node22">
+    <param name="drone_name" value="Drone22"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node23">
+    <param name="drone_name" value="Drone23"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node24">
+    <param name="drone_name" value="Drone24"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node25">
+    <param name="drone_name" value="Drone25"/> 
+  </node>
+
+</launch>

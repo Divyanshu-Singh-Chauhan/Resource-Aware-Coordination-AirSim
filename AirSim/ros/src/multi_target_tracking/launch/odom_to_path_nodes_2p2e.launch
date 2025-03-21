@@ -1,0 +1,19 @@
+<launch>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node1">
+    <param name="drone_name" value="Drone1"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node2">
+    <param name="drone_name" value="Drone2"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node3">
+    <param name="drone_name" value="Drone3"/> 
+  </node>
+
+  <node pkg="multi_target_tracking" type="odom_to_path_node.py" name="odom_to_path_node4">
+    <param name="drone_name" value="Drone4"/> 
+  </node>
+
+</launch>

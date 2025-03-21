@@ -11,7 +11,9 @@
 STRICT_MODE_OFF
 //if not using unaligned types then disable vectorization to avoid alignment issues all over the places
 //#define EIGEN_DONT_VECTORIZE
-#include "Eigen/Dense"
+//#include "<Eigen/Dense>"
+#include "/usr/include/eigen3/Eigen/Dense"
+//#include <Eigen/Dense>
 STRICT_MODE_ON
 
 namespace msr
