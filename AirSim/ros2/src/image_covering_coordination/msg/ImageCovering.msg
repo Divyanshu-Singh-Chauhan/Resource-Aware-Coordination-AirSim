@@ -5,7 +5,8 @@
 # int32 camera_orientation_setting: integer from 0,1,2,...7 to indicate the camera orientation setting at which the best photo was taken
 # geometry_msgs/Pose pose: pose of self robot with x, y, z, yaw angle. (only x and y will change)
 
-Header header
+
+std_msgs/Header header
 int32 drone_id
 sensor_msgs/Image image
 int32 camera_orientation_setting
