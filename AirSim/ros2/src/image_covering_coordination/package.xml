@@ -30,6 +30,8 @@
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <!-- Build and execution dependencies -->
+  <depend>rosidl_default_generators</depend>
+  <depend>builtin_interfaces</depend>
   <depend>rclcpp</depend>
   <depend>rclpy</depend>
   <depend>cv_bridge</depend>

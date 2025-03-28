@@ -61,6 +61,7 @@ include_directories(${RPC_LIB_INCLUDES})
 
 # Dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(tf2 REQUIRED)
@@ -135,6 +136,11 @@ install(DIRECTORY
   rviz/
   DESTINATION share/${PROJECT_NAME}
   PATTERN ".git" EXCLUDE
+)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+"msg/ImageCovering.msg"
+DEPENDENCIES std_msgs sensor_msgs geometry_msgs
 )
 
 # Required for ROS2 packages
