@@ -1,0 +1,17 @@
+<launch>
+  <arg name="algorithm_to_run" default="RAG"/>
+
+  <!-- Drone 1 -->
+  <node pkg="multi_target_tracking" type="multi_target_tracking_coord_RAG" name="RAGcoordination_debug">
+    <param name="drone_name" value="Drone1"/>
+    <param name="robot_index_ID" type="int" value="1"/>
+    <param name="number_of_pursuers" value="5"/>
+    <param name="number_of_evaders" value="10"/>
+    <param name="algorithm_to_run" value="$(arg algorithm_to_run)"/>
+
+    <param name="camera_name" value="front_center"/>
+    <param name="image_topic" value="/camera_1/image"/>
+    <param name="communication_range" type="double" value="50"/>
+  </node>
+
+</launch>

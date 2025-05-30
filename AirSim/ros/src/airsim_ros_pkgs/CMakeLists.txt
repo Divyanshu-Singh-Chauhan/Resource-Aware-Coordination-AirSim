@@ -31,7 +31,10 @@ set(RPC_LIB rpc) # name of .a file with lib prefix
 message(STATUS "found RPC_LIB_INCLUDES=${RPC_LIB_INCLUDES}")
 
 # todo eigen3 in AirLib already
-# find_package(Eigen3 REQUIRED) 
+find_package(Eigen3 REQUIRED) 
+include_directories("${EIGEN3_INCLUDE_DIR}")
+# Link Eigen3 (if needed)
+
 find_package(Boost REQUIRED)
 find_package(OpenCV REQUIRED)
 

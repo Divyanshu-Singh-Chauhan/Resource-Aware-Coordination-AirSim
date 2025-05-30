@@ -1,0 +1,139 @@
+
+<launch>
+  <arg name="algorithm_to_run" default="RBG"/>
+  <arg name="replanning_frequency" default="10"/>
+
+  
+  <node pkg="multi_target_tracking" type="multi_target_tracking_coord" name="coordination_1" output="log">
+    <param name="drone_name" value="Drone1"/>
+    <param name="robot_index_ID" type="int" value="1"/>
+    <param name="number_of_pursuers" value="10"/>
+    <param name="number_of_evaders" value="15"/>  
+    <param name="algorithm_to_run" value="$(arg algorithm_to_run)"/>
+    <param name="replanning_frequency" value="$(arg replanning_frequency)"/>
+
+    <param name="camera_name" value="front_center"/>
+    <param name="image_topic" value="/camera_1/image"/>
+    <param name="communication_range" type="double" value="150"/>
+  </node>
+
+  <node pkg="multi_target_tracking" type="multi_target_tracking_coord" name="coordination_2" output="log">
+    <param name="drone_name" value="Drone2"/>
+    <param name="robot_index_ID" type="int" value="2"/>
+    <param name="number_of_pursuers" value="10"/>
+    <param name="number_of_evaders" value="15"/>  
+    <param name="algorithm_to_run" value="$(arg algorithm_to_run)"/>
+    <param name="replanning_frequency" value="$(arg replanning_frequency)"/>
+
+    <param name="camera_name" value="front_center"/>
+    <param name="image_topic" value="/camera_2/image"/>
+    <param name="communication_range" type="double" value="150"/>
+  </node>
+
+  <node pkg="multi_target_tracking" type="multi_target_tracking_coord" name="coordination_3" output="log">
+    <param name="drone_name" value="Drone3"/>
+    <param name="robot_index_ID" type="int" value="3"/>
+    <param name="number_of_pursuers" value="10"/>
+    <param name="number_of_evaders" value="15"/>  
+    <param name="algorithm_to_run" value="$(arg algorithm_to_run)"/>
+    <param name="replanning_frequency" value="$(arg replanning_frequency)"/>
+
+    <param name="camera_name" value="front_center"/>
+    <param name="image_topic" value="/camera_3/image"/>
+    <param name="communication_range" type="double" value="150"/>
+  </node>
+
+  <node pkg="multi_target_tracking" type="multi_target_tracking_coord" name="coordination_4" output="log">
+    <param name="drone_name" value="Drone4"/>
+    <param name="robot_index_ID" type="int" value="4"/>
+    <param name="number_of_pursuers" value="10"/>
+    <param name="number_of_evaders" value="15"/>  
+    <param name="algorithm_to_run" value="$(arg algorithm_to_run)"/>
+    <param name="replanning_frequency" value="$(arg replanning_frequency)"/>
+    <param name="replanning_frequency" value="$(arg replanning_frequency)"/>
+
+    <param name="camera_name" value="front_center"/>
+    <param name="image_topic" value="/camera_4/image"/>
+    <param name="communication_range" type="double" value="150"/>
+  </node>
+
+  <node pkg="multi_target_tracking" type="multi_target_tracking_coord" name="coordination_5">
+    <param name="drone_name" value="Drone5"/>
+    <param name="robot_index_ID" type="int" value="5"/>
+    <param name="number_of_pursuers" value="10"/>
+    <param name="number_of_evaders" value="15"/>  
+    <param name="algorithm_to_run" value="$(arg algorithm_to_run)"/>
+    <param name="replanning_frequency" value="$(arg replanning_frequency)"/>
+
+    <param name="camera_name" value="front_center"/>
+    <param name="image_topic" value="/camera_5/image"/>
+    <param name="communication_range" type="double" value="150"/>
+  </node>
+
+  <node pkg="multi_target_tracking" type="multi_target_tracking_coord" name="coordination_6">
+    <param name="drone_name" value="Drone6"/>
+    <param name="robot_index_ID" type="int" value="6"/>
+    <param name="number_of_pursuers" value="10"/>
+    <param name="number_of_evaders" value="15"/>  
+    <param name="algorithm_to_run" value="$(arg algorithm_to_run)"/>
+    <param name="replanning_frequency" value="$(arg replanning_frequency)"/>
+
+    <param name="camera_name" value="front_center"/>
+    <param name="image_topic" value="/camera_6/image"/>
+    <param name="communication_range" type="double" value="150"/>
+  </node>
+
+  <node pkg="multi_target_tracking" type="multi_target_tracking_coord" name="coordination_7">
+    <param name="drone_name" value="Drone7"/>
+    <param name="robot_index_ID" type="int" value="7"/>
+    <param name="number_of_pursuers" value="10"/>
+    <param name="number_of_evaders" value="15"/>  
+    <param name="algorithm_to_run" value="$(arg algorithm_to_run)"/>
+    <param name="replanning_frequency" value="$(arg replanning_frequency)"/>
+
+    <param name="camera_name" value="front_center"/>
+    <param name="image_topic" value="/camera_7/image"/>
+    <param name="communication_range" type="double" value="150"/>
+  </node>
+
+  <node pkg="multi_target_tracking" type="multi_target_tracking_coord" name="coordination_8">
+    <param name="drone_name" value="Drone8"/>
+    <param name="robot_index_ID" type="int" value="8"/>
+    <param name="number_of_pursuers" value="10"/>
+    <param name="number_of_evaders" value="15"/>  
+    <param name="algorithm_to_run" value="$(arg algorithm_to_run)"/>
+    <param name="replanning_frequency" value="$(arg replanning_frequency)"/>
+
+    <param name="camera_name" value="front_center"/>
+    <param name="image_topic" value="/camera_8/image"/>
+    <param name="communication_range" type="double" value="150"/>
+  </node>
+
+  <node pkg="multi_target_tracking" type="multi_target_tracking_coord" name="coordination_9">
+    <param name="drone_name" value="Drone9"/>
+    <param name="robot_index_ID" type="int" value="9"/>
+    <param name="number_of_pursuers" value="10"/>
+    <param name="number_of_evaders" value="15"/>  
+    <param name="algorithm_to_run" value="$(arg algorithm_to_run)"/>
+    <param name="replanning_frequency" value="$(arg replanning_frequency)"/>
+
+    <param name="camera_name" value="front_center"/>
+    <param name="image_topic" value="/camera_9/image"/>
+    <param name="communication_range" type="double" value="150"/>
+  </node>
+
+  <node pkg="multi_target_tracking" type="multi_target_tracking_coord" name="coordination_10">
+    <param name="drone_name" value="Drone10"/>
+    <param name="robot_index_ID" type="int" value="10"/>
+    <param name="number_of_pursuers" value="10"/>
+    <param name="number_of_evaders" value="15"/>  
+    <param name="algorithm_to_run" value="$(arg algorithm_to_run)"/>
+    <param name="replanning_frequency" value="$(arg replanning_frequency)"/>
+
+    <param name="camera_name" value="front_center"/>
+    <param name="image_topic" value="/camera_10/image"/>
+    <param name="communication_range" type="double" value="150"/>
+  </node>
+
+
+</launch>
