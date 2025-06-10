@@ -20,7 +20,7 @@ set(CXX_EXP_LIB "-nostdinc++ -I/usr/include/c++/8 -I/usr/include/x86_64-linux-gn
 
 # set(RPC_LIB_INCLUDES " ${AIRSIM_ROOT}/external/rpclib/rpclib-2.2.1/include")
 # NOTE: below is for IRAL workstation left
-set(RPC_LIB_INCLUDES "/home/sgari/sandilya_ws/unity_airsim_workspace/AirSim/external/rpclib/rpclib-2.3.0/include")
+set(RPC_LIB_INCLUDES "/home/Resource-Aware-Coordination-AirSim/AirSim/external/rpclib/rpclib-2.3.0/include")
 
 # NOTE: Below is for dellLAT workstation only
 # set(RPC_LIB_INCLUDES "/home/sgari/iral_research/AirSim/external/rpclib/rpclib-2.3.0/include")
